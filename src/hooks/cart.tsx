@@ -95,7 +95,7 @@ const CartProvider: React.FC = ({ children }) => {
       const product = newProducts[indexProduct];
 
       if (product.quantity === 1) {
-        newProducts.splice(indexProduct);
+        newProducts.splice(indexProduct, 1);
       } else {
         product.quantity -= 1;
       }
